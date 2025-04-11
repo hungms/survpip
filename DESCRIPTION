@@ -1,0 +1,33 @@
+Package: survpip
+Title:  Pipeline for Survival Analysis and Visualization
+Version: 0.1.0
+Authors@R: 
+    person(given = "Miu Shing", family = "Hung", email = "matthewhungms@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0009-0004-0412-4374"))
+Description: 
+    A package for survival analysis and visualization.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+URL: https://hungms.github.io/survpip/
+LazyData: true
+Imports:
+    rlang,
+    ggplot2,
+    dplyr,
+    magrittr,
+    stringr,
+    cowplot,
+    viridis,
+    ggrepel,
+    patchwork,
+    survival,
+    npsurv,
+    survminer,
+    tidytidbits,
+    survivalAnalysis,
+    finalfit,
+    gridExtra,
+    gt,
+    forestplot
+Remotes: hungms/plotr

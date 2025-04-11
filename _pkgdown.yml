@@ -1,0 +1,18 @@
+url: https://hungms.github.io/survpip/
+template:
+  bootstrap: 5
+  bootswatch: flatly
+navbar:
+  structure:
+    left:
+    - intro
+    - reference
+    - news
+    right: github
+reference:
+  title: CoxPH Functions
+    - starts_with("make_")
+    - starts_with("plot_forest")
+  title: Kaplan-Meier Functions
+    - starts_with("find_")
+    - starts_with("plot_survival")
