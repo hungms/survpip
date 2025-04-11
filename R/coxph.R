@@ -170,6 +170,7 @@ plot_forest_gene <- function(table, title = "", analysis = "multivariate", clip 
 
     # format foreset plot
     table <- table %>%
+        ungroup() %>%
         mutate(
             Gene = Subgroup,
             # mean
@@ -186,6 +187,7 @@ plot_forest_gene <- function(table, title = "", analysis = "multivariate", clip 
             `HR (univariate)` = gsub("\\(.*?, p", "(p", `HR (univariate)`),
             `HR (multivariate)` = gsub("\\(.*?, p", "(p", `HR (multivariate)`)
             ) %>%
+        arrange(desc(mean)) %>%
         dplyr::select(c("Gene", analysis_keep, "mean", "lower", "upper"))
 
     for(i in 1:nrow(table)){
